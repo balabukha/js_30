@@ -26,11 +26,11 @@
     text-shadow: 0 0 .5rem black;
     color: #FFF;
     width: 5rem;
-    -webkit-transition: all  .07;
-    -moz-transition: all  .07;
-    -ms-transition: all  .07;
-    -o-transition: all  .07;
-    transition: all  .07;
+    -webkit-transition: all .07s;
+    -moz-transition: all  .07s;
+    -ms-transition: all  .07s;
+    -o-transition: all  .07s;
+    transition: all  .07s;
 }
 
 kbd{
