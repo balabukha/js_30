@@ -11,6 +11,7 @@
     -webkit-background-size:cover;
     background-size:cover;
     display: flex;
+    /*flex:1;*/
     justify-content: center;
     align-items: center;
 }
@@ -25,6 +26,11 @@
     text-shadow: 0 0 .5rem black;
     color: #FFF;
     width: 5rem;
+    -webkit-transition: all  .07;
+    -moz-transition: all  .07;
+    -ms-transition: all  .07;
+    -o-transition: all  .07;
+    transition: all  .07;
 }
 
 kbd{
@@ -34,4 +40,16 @@ kbd{
 .sound{
     display: block;
     margin-top: 10px;
+    color: #ffc600;
+}
+
+.playing{
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+
 }
