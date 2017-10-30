@@ -44,13 +44,4 @@
     content: '';
     transition: all .05s;
 }
-.hours{
-    color: red;
-    transform: rotate(90deg);
 
-}
-.seconds{
-    color: red;
-    transform: rotate(90deg);
-
-}
