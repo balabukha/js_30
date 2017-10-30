@@ -32,11 +32,6 @@
 
 }
 
-/*.hours{*/
-    /*border-bottom: 7px solid #FFF;*/
-    /*width: 150px;*/
-/*}*/
-
 .hand{
     width: 40%;
     height: 5px;
@@ -46,5 +41,16 @@
     transform: rotate(90deg);
     transform-origin: 100%;
     opacity: .3;
+    content: '';
+    transition: all .05s;
+}
+.hours{
+    color: red;
+    transform: rotate(90deg);
+
+}
+.seconds{
+    color: red;
+    transform: rotate(90deg);
 
 }
