@@ -40,8 +40,16 @@
     top:50%;
     transform: rotate(90deg);
     transform-origin: 100%;
-    opacity: .3;
+    opacity: .7;
     content: '';
     transition: all .05s;
+    transition-timing-function: ease;
+}
+
+.seconds{
+    background: black;
+    height: 3px;
+    opacity: .4;
+
 }
 
