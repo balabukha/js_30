@@ -5,8 +5,10 @@ let seconds = document.querySelector(".seconds");
 
 function updating(){
     let now = new Date();
-    let secondsNew = now.getSeconds()/60 * 360;
-        seconds.style.transform = `rotate(${secondsNew})deg`;
+    let secondsNew = now.getSeconds()/60 * 360+90;
+        seconds.style.transform = `rotate(${secondsNew}deg)`;
+        seconds.style.color = `red`;
+        console.log(secondsNew)
 }
 
 setInterval(updating, 1000);
