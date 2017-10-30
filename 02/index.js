@@ -1,10 +1,12 @@
-let hours = document.querySelector("hours");
-let minutes = document.querySelector("minutes");
-let seconds = document.querySelector("seconds");
+let hours = document.querySelector(".hours");
+let minutes = document.querySelector(".minutes");
+let seconds = document.querySelector(".seconds");
 
-setInterval(updating, 1000);
 
 function updating(){
-let now = new Date();
-
+    let now = new Date();
+    let secondsNew = now.getSeconds()/60 * 360;
+        seconds.style.transform = `rotate(${secondsNew})deg`;
 }
+
+setInterval(updating, 1000);
