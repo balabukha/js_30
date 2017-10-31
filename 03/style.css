@@ -8,6 +8,12 @@
     text-align: center;
 }
 
+:root {
+    --spacing: 10px;
+    --blur: 10px;
+    --color: #ff0000;
+}
+
 .wrapper {
     background: url("./img/wall.jpg") no-repeat center center ;
     min-height: 100vh;
@@ -31,6 +37,9 @@ img{
     width: 400px;
     margin: 20px;
     box-shadow: 0 0 1rem black;
+    padding: var(--spacing);
+    filter: blur(var(--blur));
+
 }
 
 h1 {
