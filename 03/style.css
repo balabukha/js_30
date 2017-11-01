@@ -9,8 +9,8 @@
 }
 
 :root {
-    --spacing: 10px;
-    --blur: 10px;
+    --spacing: 1px;
+    --blur: 1px;
     --color: #ff0000;
 }
 
@@ -37,11 +37,16 @@ img{
     width: 400px;
     margin: 20px;
     box-shadow: 0 0 1rem black;
-    padding: var(--spacing);
+    /*padding: var(--spacing);*/
     filter: blur(var(--blur));
-
+    border: solid var(--spacing);
+    border-color: var(--color);
 }
 
 h1 {
     padding: 20px;
+}
+
+span {
+    color: var(--color);
 }
