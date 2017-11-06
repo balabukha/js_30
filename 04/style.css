@@ -21,7 +21,7 @@
     background-size:cover;
     display: flex;
     flex:1;
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
     flex-direction: column;
 }
@@ -44,5 +44,10 @@ input{
     opacity: .9;
     font-size: 1.1rem;
     color: #FFFFFF;
+    margin-top: 50px;
+}
 
+.hl{
+    background-color: #FFA500;
+    opacity: .8;
 }
