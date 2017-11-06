@@ -1,16 +1,13 @@
 const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
-console.log(endpoint);
 
 const cities = [];
 fetch(endpoint)
-    .then(blob => blob.json())
+    .then(item => item.json())
     .then(data => cities.push(...data));
-
-console.log( cities);
 
 function findMatches(wordToMatch, cities){
     return cities.filter(place => {
-        const regex = new RegExp(wordToMatch , 'gi')
+        const regex = new RegExp(wordToMatch , 'gi');
         return place.city.match(regex) || place.state.match(regex)
     })
 }
@@ -18,13 +15,19 @@ function findMatches(wordToMatch, cities){
 let input = document.querySelector('input');
 let ul_class = document.querySelector('.ul_class');
 
-console.log(input);
 
-
+input.addEventListener('keyup', displayMatches);
 input.addEventListener('change', displayMatches);
 
 function displayMatches(){
-    this.value;
+    let matchArr = findMatches(this.value, cities);
+    let html = matchArr.map(item => {
+        let regex = new RegExp(this.value, 'gi');
+        const cityName = item.city.replace(regex, `<span class="hl">${this.value}</span>`);
+        const stateName = item.state.replace(regex, `<span class="hl">${this.value}</span>`);
+        return `<li>${cityName}, ${stateName}</li>`
+    }).join('');
+    ul_class.innerHTML = html;
 }
 
 //
