@@ -1,11 +1,13 @@
 *, *::before, *::after {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Indie Flower', cursive;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .wrapper {
@@ -16,6 +18,35 @@
     display: flex;
     flex:1;
     /*justify-content: center;*/
-    align-items: center;
-    flex-direction: column;
+    /*align-items: center;*/
+    flex-direction: row;
+}
+
+.panel{
+    background-size: cover;
+    flex: 1;
+}
+
+p {
+    text-transform: uppercase;
+}
+
+.panel_01{
+    background-image: url('https://picsum.photos/700/1000?image=11');
+}
+
+.panel_02{
+    background-image: url('https://picsum.photos/700/1000?image=102');
+}
+
+.panel_03{
+    background-image: url('https://picsum.photos/700/1000?image=104');
+}
+
+.panel_04{
+    background-image: url('https://picsum.photos/700/1000?image=107');
+}
+
+.panel_05{
+    background-image: url('https://picsum.photos/700/1000?image=110');
 }
