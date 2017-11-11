@@ -27,18 +27,39 @@
     width: 500px;
     background-color: #fff;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border: 1px solid darkgray;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    border-bottom: none;
+}
+/*.task:nth-child(1){*/
+    /*border-bottom: none;*/
+/*}*/
+/*.task:last-child{*/
+     /*border-bottom: none;*/
+ /*}*/
+.task{
+    border-bottom: 1px solid darkgray;
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
 }
 
 span{
     border-left: 1px solid darkgray;
-    margin: 20px;
     height: 100%;
-
+    padding: 20px;
+    flex: 10;
 }
 
 input {
     margin: 20px;
+    text-align: center;
+    align-items: center;
+    /*flex: 1*/
+}
 
+input:checked + span{
+    text-decoration:line-through;
 }
