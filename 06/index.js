@@ -11,8 +11,17 @@ function handleClick(e){
 
 
     if(e.path['0'].checked && e.shiftKey) {
+        inputs.forEach( input => {
+            console.log(input);
+            if(input === this || input === lastCheck){
+                isChecked = !isChecked;
+                console.log('1');
+            }
 
-    } else {
+            if(isChecked) {
+                input.checked = true;
+            }
+        })
     }
 
     lastCheck = this;
