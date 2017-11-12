@@ -24,7 +24,7 @@
 }
 
 .wrap{
-    width: 500px;
+    width: 400px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -32,13 +32,10 @@
     /*align-items: center;*/
     /*justify-content: center;*/
     border-bottom: none;
+    box-shadow: .2rem .2rem .5rem darkgray;
+
 }
-/*.task:nth-child(1){*/
-    /*border-bottom: none;*/
-/*}*/
-/*.task:last-child{*/
-     /*border-bottom: none;*/
- /*}*/
+
 .task{
     border-bottom: 1px solid darkgray;
     display: flex;
