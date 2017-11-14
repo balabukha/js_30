@@ -1,14 +1,14 @@
-// cornify_add();
 
 document.addEventListener('keydown', clicking);
 let arr = [];
-let magicWord = yahoo;
+let magicWord = 'yahoo';
 
 function clicking(e){
     arr.push(e.key);
-    arr.splice(magicWord.length, )
-
-    console.log(arr);
+    let newArr = arr.slice(-magicWord.length)
+    if (newArr.join('').includes(magicWord)) {
+        cornify_add();
+    }
 
 
 };
