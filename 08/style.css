@@ -1,0 +1,46 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*text-align: center;*/
+    /*font-weight: bold;*/
+    font-size: 1rem;
+}
+
+.wrapper {
+    background-image: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);
+    min-height: 100vh;
+    -webkit-background-size:cover;
+    background-size:cover;
+    display: flex;
+    /*flex:1;*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.text_wrap{
+    width: 50%;
+    border-radius: 3px;
+    background-color: #FFF;
+    margin: 20px;
+}
+
+img{
+    margin: 5px;
+}
+
+p {
+    margin: 10px 5px;
+}
+
+h1{
+    margin: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
