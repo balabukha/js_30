@@ -32,6 +32,7 @@
 
 img{
     margin: 5px;
+    transition: 0.7s ease-out;
 }
 
 p {
@@ -43,4 +44,20 @@ h1{
     text-align: center;
     font-size: 1.2rem;
     text-decoration: underline;
+}
+
+.rightSlide{
+    transform: translateX(-50px);
+    visibility:hidden;
+}
+
+.leftSlide{
+    transform: translateX(50px);
+    visibility:hidden
+}
+
+.active{
+    visibility:visible;
+    transform: translateX(0px);
+
 }
