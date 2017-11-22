@@ -11,7 +11,8 @@
 }
 
 .wrapper {
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);    min-height: 100vh;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    min-height: 100vh;
     -webkit-background-size:cover;
     background-size:cover;
     display: flex;
@@ -37,7 +38,6 @@ svg{
     margin-top: 70px;
 }
 
-
 .wrapper-form h1 {
     padding-bottom: 20px;
     text-transform: uppercase;
@@ -52,6 +52,49 @@ svg{
     padding-bottom: 10px;
     border-bottom: solid #FA4 1px;
     opacity: 1;
+    margin-top: 10px;
+}
+
+input[type="checkbox"]{
+    margin-right:5px;
+}
+
+.inputs .typeInput{
+    padding: 3px;
+    background-color: #fff !important;
+    opacity:1;
+    border: none;
+    border-bottom: 1px solid #FA4;
+    width: 50%;
+}
+
+.inputs .submitInput{
+    /*padding: 12px;*/
+    /*width: 20%;*/
+    /*height: 10%;*/
+    /*background-color: #fff;*/
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 20px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.inputs .submitInput:hover {
+    background-color: #008CBA; /* Green */
+    color: #FFF;
+}
+
+
+.inputs{
+    display: flex;
+    margin-top: 20px;
 }
 
 
