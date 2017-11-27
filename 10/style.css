@@ -11,14 +11,22 @@
 }
 
 .wrapper {
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background: #d9a7c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     min-height: 100vh;
     -webkit-background-size:cover;
     background-size:cover;
     display: flex;
     /*flex:1;*/
-    /*justify-content: center;*/
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     overflow: hidden;
+}
+
+h1 {
+    font-size: 46px;
+    /*box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);*/
+    text-shadow: 0 10px 10px rgba(0,0,0,0.55);
 }
