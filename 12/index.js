@@ -2,12 +2,15 @@ const videos = [...document.querySelectorAll('li')];
 const sec = videos.map(item => item.dataset.time)
     .map(item => {
         const [min, sec] = item.split(':').map(item => +item);
-        const A = [min*60, sec].map(item => console.log(item));
-        return A;
-            // .map(item => console.log(item))
-            // .map(item=>item.reduce((total, newSec) => total+newSec))
-            ;
+        return (min*60 + sec);
     });
+
+
 let sum = sec.reduce((total, newSec) => total+newSec);
-console.log(sec);
-console.log(sum);
+const hours = Math.floor(sum/3600);
+const mins = Math.floor((sum - hours * 3600)/60);
+const secs = (sum - hours * 3600 - mins * 60);
+
+let time = `Total time is: ${hours}:${mins}:${secs}`;
+
+let sumTime = document.querySelector('#sumTime').innerHTML= time;
