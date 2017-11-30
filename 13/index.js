@@ -9,6 +9,9 @@ a.forEach(a => a.addEventListener('mouseenter', mouseMoving));
 
 function mouseMoving(){
     let coords = this.getBoundingClientRect();
-    console.log(coords.left)
+    span.style.width = `${coords.width}px`;
+    span.style.height = `${coords.height}px`;
+    var y = window.scrollY;
+    span.style.transform = `translate(${coords.left+window.scrollX}px, ${coords.top+window.scrollY}px)`;
 }
 

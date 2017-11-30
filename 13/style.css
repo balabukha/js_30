@@ -59,12 +59,20 @@ main{
 
 .highlight{
     display: block;
-    background-color: red;
-    -webkit-transition: all aese 0.5s;
-    -moz-transition: all aese 0.5s;
-    -ms-transition: all aese 0.5s;
-    -o-transition: all aese 0.5s;
-    transition: all aese 0.5s;
+    background-color: #FFF;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border: 2px solid #FFF;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    opacity:0.3;
 }
 
 @media all and (max-width: 800px) {
