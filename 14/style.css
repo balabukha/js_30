@@ -1,0 +1,82 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*text-align: center;*/
+    /*font-weight: bold;*/
+    font-size: 1rem;
+}
+
+.wrapper {
+    background: #642B73;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 100vh;
+    -webkit-background-size:cover;
+    background-size:cover;
+    /*display: -webkit-box;*/
+    /*display: -moz-box;*/
+    /*display: -ms-flexbox;*/
+    /*display: -webkit-flex;*/
+    /*display: flex;*/
+    /*flex:1;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*flex-direction: row;*/
+    overflow: hidden;
+    color: #FFF;
+}
+
+ul {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    /*justify-content: space-around;*/
+    justify-content: flex-end;
+
+}
+
+ul li a{
+    flex-direction: column;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+    /*justify-content: flex-end;*/
+
+}
+
+main{
+    margin: 100px 70px;
+}
+
+.highlight{
+    display: block;
+    background-color: #FFF;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border: 2px solid #FFF;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    opacity:0.3;
+}
+
+@media all and (max-width: 800px) {
+    ul {
+        justify-content: space-around;
+    }
+}
