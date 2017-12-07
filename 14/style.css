@@ -25,11 +25,22 @@
     /*align-items: center;*/
     /*flex-direction: row;*/
     overflow: hidden;
-    color: darkgray;
+    color: #000;
+}
+
+p{
+    line-height: 25px;
 }
 
 nav{
     background-color: dimgrey;
+
+}
+
+.fixedNav{
+    position: fixed;
+    width: 100%;
+    top:0;
 }
 
 
