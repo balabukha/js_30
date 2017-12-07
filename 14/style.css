@@ -11,9 +11,7 @@
 }
 
 .wrapper {
-    background: #642B73;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     min-height: 100vh;
     -webkit-background-size:cover;
     background-size:cover;
@@ -27,7 +25,24 @@
     /*align-items: center;*/
     /*flex-direction: row;*/
     overflow: hidden;
-    color: #FFF;
+    color: darkgray;
+}
+
+nav{
+    background-color: dimgrey;
+}
+
+
+.wrapper-img{
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+.wrapper-img img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
 }
 
 ul {
@@ -50,7 +65,10 @@ ul li a{
     padding: 1em;
     color: white;
     /*justify-content: flex-end;*/
+}
 
+ul li a:hover{
+    background: lightsteelblue;
 }
 
 main{
