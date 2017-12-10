@@ -1,19 +1,23 @@
-let topNav = document.querySelector('nav');
+let nav = document.querySelector('nav');
+let topOfNav = nav.offsetTop;
 let main = document.querySelector('main');
 let computedStyle = getComputedStyle(main);
 window.addEventListener('scroll', scrolling);
 let currentMarginTopMain = +computedStyle.marginTop.replace('px','');
 
 function scrolling(){
-    console.log(topNav.offsetTop, window.pageYOffset,topNav.offsetHeight, +computedStyle.marginTop.replace('px',''));
-    if (window.pageYOffset >= topNav.offsetTop) {
-    topNav.classList.add('fixedNav');
-    main.style.marginTop = currentMarginTopMain + topNav.offsetHeight + 'px';
+    if (window.scrollY >= topOfNav) {
 
-};
+        document.body.classList.add('fixedNav'); // fix to top
+        main.style.marginTop = currentMarginTopMain + nav.offsetHeight + 'px';
 
-if(window.pageYOffset <= 400) {
-    topNav.classList.remove('fixedNav');
-    main.style.marginTop = currentMarginTopMain - topNav.offsetHeight + 'px';
+} else {
+    document.body.classList.remove('fixedNav');
+    main.style.marginTop = currentMarginTopMain + 'px';
+}
+
+if(window.pageYOffset === 400) {
+    // topOfNav.classList.remove('fixedNav');
+    // main.style.marginTop = currentMarginTopMain + topOfNav.offsetHeight + 'px';
 }
 }
