@@ -34,13 +34,15 @@ p{
 
 nav{
     background-color: dimgrey;
-
+    top:0;
+    width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
-.fixedNav{
+.fixedNav nav{
     position: fixed;
-    width: 100%;
-    top:0;
+    /*top:0;*/
 }
 
 
