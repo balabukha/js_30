@@ -1,0 +1,65 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*text-align: center;*/
+    /*font-weight: bold;*/
+    font-size: 1rem;
+}
+
+body {
+    background: #3E5151;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 100vh;
+    -webkit-background-size:cover;
+    background-size:cover;
+    /*display: -webkit-box;*/
+    /*display: -moz-box;*/
+    /*display: -ms-flexbox;*/
+    /*display: -webkit-flex;*/
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    color: #000;
+    flex-wrap: wrap;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+}
+.header-score{
+    margin-bottom: 100px;
+    font-size: 70px;
+}
+.header-score span{
+    font-size: 70px;
+}
+.main-hole{
+    margin: 40px;
+    margin-top: 60px;
+    position: relative;
+
+}
+.hole{
+    width: 170px;
+    position: relative;
+
+}
+
+.mole{
+    position: absolute;
+    bottom: 7px;
+    width: 100px;
+    left:40px;
+}
+
+
