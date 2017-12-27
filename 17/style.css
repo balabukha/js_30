@@ -47,6 +47,7 @@ main{
     margin: 40px;
     margin-top: 60px;
     position: relative;
+    transition: all 1s ease;
 
 }
 .hole{
@@ -57,9 +58,18 @@ main{
 
 .mole{
     position: absolute;
-    bottom: 7px;
+    top: 18px;
     width: 100px;
     left:40px;
+    display: none;
+    transition: all 1s ease;
 }
+
+.up{
+    transition: all 1s ease;
+    top: -77px;
+    display: block;
+}
+
 
 
